@@ -73,6 +73,35 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased h-full w-full bg-slate-50`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "Visa On Arrival Jakarta",
+              "url": "https://jakartavisa.agency",
+              "telephone": "+61 423 854 701",
+              "email": "contact@indonesianvisas.agency",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jakarta",
+                "addressCountry": "ID"
+              },
+              "priceRange": "$$",
+              "description": "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas.",
+              "sameAs": [
+                "https://instagram.com/balihelp.id",
+                "https://facebook.com/BaliHelp",
+                "https://twitter.com/IndonesianVisas",
+                "https://www.linkedin.com/in/bayu-damopolii-887ab883/",
+                "https://youtube.com/@balihelp",
+                "https://t.me/IndonesianVisas",
+                "https://www.tiktok.com/@balihelp.id"
+              ]
+            })
+          }}
+        />
         {children}
         <Toaster />
       </body>
