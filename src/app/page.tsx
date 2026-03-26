@@ -468,18 +468,12 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-10 px-4 bg-gradient-to-br from-slate-800 to-slate-700 mt-auto">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-6">
-
-          </div>
           <div className="border-t border-slate-600 pt-6 pb-4 text-center">
-            <p className="text-slate-300 text-sm md:text-base mb-4 font-semibold">Jakarta Visas powered by Indonesian Visas ® - All Rights Reserved</p>
-            <div className="mb-4">
-              <div className="flex flex-wrap justify-center items-center gap-2 md:gap-3 text-xs md:text-sm">
-
-              </div>
-
-
+            <p className="text-slate-300 text-sm md:text-base mb-2 font-semibold">Jakarta Visas powered by Indonesian Visas ® - All Rights Reserved</p>
+            <div className="mb-6">
+              <a href="/site-map" className="text-amber-400 hover:text-white transition-colors font-bold text-sm">(sitemap)</a>
             </div>
+            
             <div className="flex flex-wrap justify-center gap-2 md:gap-3 text-xs md:text-sm">
               <a href="https://indonesianvisas.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">Privacy & Policy</a>
               <span className="text-slate-600">•</span>

@@ -1,0 +1,6 @@
+Contact: mailto:contact@indonesianvisas.agency
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: en, id
+Canonical: https://jakartavisas.agency/.well-known/security.txt
+Policy: https://indonesianvisas.com/security-policy
+Hiring: https://indonesianvisas.com/careers

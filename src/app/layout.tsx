@@ -30,22 +30,57 @@ export const metadata: Metadata = {
     "Tourist Visa Indonesia"
   ],
   authors: [{ name: "Jakarta Visas powered by Indonesian Visas" }],
-  metadataBase: new URL("https://jakartavisa.agency"),
+  metadataBase: new URL("https://jakartavisas.agency"),
   alternates: {
-    canonical: "https://jakartavisa.agency",
+    canonical: "https://jakartavisas.agency",
+  },
+  icons: {
+    icon: "/Logo Vector.webp",
+    shortcut: "/Logo Vector.webp",
+    apple: "/Logo Vector.webp",
+  },
+  manifest: "/manifest.json",
+  themeColor: "#1e293b",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Jakarta Visa",
+  },
+  formatDetection: {
+    telephone: true,
+    address: true,
+    email: true,
   },
   openGraph: {
     title: "Visa On Arrival Jakarta - Official E-Visa Services | Fast & Reliable",
     description: "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas. Trusted by thousands for seamless entry into Indonesia.",
-    url: "https://jakartavisa.agency",
+    url: "https://jakartavisas.agency",
     siteName: "VOA Jakarta",
+    images: [
+      {
+        url: "/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Jakarta Visa Official Services",
+      },
+    ],
     type: "website",
-    locale: "en_US",
+    locale: "en_ID",
   },
   twitter: {
     card: "summary_large_image",
     title: "Visa On Arrival Jakarta - Official E-Visa Services",
     description: "Fast, reliable, and professional visa services for your Jakarta adventure. Apply now!",
+    images: ["/og-image.webp"],
+    site: "@IndonesianVisas",
+    creator: "@IndonesianVisas",
+  },
+  other: {
+    "geo.region": "ID",
+    "geo.placename": "Jakarta",
+    "geo.position": "-6.2088;106.8456",
+    "ICBM": "-6.2088, 106.8456",
   },
   robots: {
     index: true,
@@ -80,13 +115,21 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Visa On Arrival Jakarta",
-              "url": "https://jakartavisa.agency",
+              "url": "https://jakartavisas.agency",
               "telephone": "+61 423 854 701",
               "email": "contact@indonesianvisas.agency",
               "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "Jakarta",
                 "addressLocality": "Jakarta",
+                "addressRegion": "Jakarta",
+                "postalCode": "10110",
                 "addressCountry": "ID"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "-6.2088",
+                "longitude": "106.8456"
               },
               "priceRange": "$$",
               "description": "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas.",

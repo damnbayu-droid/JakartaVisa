@@ -1,0 +1,21 @@
+{
+  "name": "Jakarta Visa Official Services",
+  "short_name": "Jakarta Visa",
+  "description": "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "/Logo Vector.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/Logo Vector.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,13 +1,42 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
+    const baseUrl = 'https://jakartavisas.agency';
+    const lastModified = new Date();
+
+    const regionalRoutes = [
+        '/visa-indonesia',
+        '/visa-bali',
+        '/visa-jakarta',
+        '/visa-lombok',
+        '/visa-surabaya',
+        '/visa-jogja',
+        '/visa-manado',
+        '/visa-banten',
+        '/visa-tangerang',
+        '/indonesia-visa',
+    ];
+
+    const sitemapRoutes: MetadataRoute.Sitemap = [
         {
-            url: 'https://jakartavisa.agency',
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
+            url: baseUrl,
+            lastModified,
+            changeFrequency: 'weekly' as const,
             priority: 1,
         },
-        // Add other routes here if you have more pages
+        {
+            url: `${baseUrl}/site-map`,
+            lastModified,
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        },
+        ...regionalRoutes.map(route => ({
+            url: `${baseUrl}${route}`,
+            lastModified,
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        })),
     ];
+
+    return sitemapRoutes;
 }
