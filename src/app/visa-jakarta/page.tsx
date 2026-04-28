@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Jakarta Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Need a visa for Jakarta? Get your Jakarta Visa quickly with our official E-Visa and Visa on Arrival services. Trusted experts for Soekarno-Hatta Airport entry.",
+  title: "Jakarta Visa Services - Legal Sponsorship & VOA | Fast Approval",
+  description: "Need a visa for Jakarta? Get your Jakarta Visa quickly with our legal sponsorship for E-Visa and Visa on Arrival services. Trusted experts for Soekarno-Hatta Airport entry.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-jakarta",
+    canonical: "https://www.jakartavisas.agency/visa-jakarta",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Jakarta"
-      title="Official Jakarta Visa Services"
+      title="Jakarta Visa - Legal Sponsorship Services"
       description="The economic heart of Indonesia. We provide specialized Jakarta Visa support for business travelers, investors, and tourists entering through CGK."
       seoContent={
         <>

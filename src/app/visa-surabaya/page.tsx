@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Surabaya Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Heading to Surabaya? Get your Surabaya Visa quickly with our official E-Visa and Visa on Arrival services. Trusted experts for Juanda Airport entry.",
+  title: "Surabaya Visa Services - Legal E-Visa & VOA | Fast Approval",
+  description: "Heading to Surabaya? Get your Surabaya Visa quickly with our legal E-Visa and Visa on Arrival services. Trusted experts for Juanda Airport entry.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-surabaya",
+    canonical: "https://www.jakartavisas.agency/visa-surabaya",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Surabaya"
-      title="Official Surabaya Visa Services"
+      title="Legal Surabaya Visa Services"
       description="The gateway to East Java. We provide specialized Surabaya Visa support for business travelers, industrial professionals, and tourists exploring Mount Bromo."
       seoContent={
         <>

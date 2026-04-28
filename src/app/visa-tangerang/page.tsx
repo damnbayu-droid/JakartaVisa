@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Tangerang Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Need a visa for Tangerang? Get your Tangerang Visa quickly with our official E-Visa and Visa on Arrival services. Trusted experts for airport and BSD City entry.",
+  title: "Tangerang Visa Services - Legal E-Visa & VOA | Fast Approval",
+  description: "Need a visa for Tangerang? Get your Tangerang Visa quickly with our legal E-Visa and Visa on Arrival services. Trusted experts for airport and BSD City entry.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-tangerang",
+    canonical: "https://www.jakartavisas.agency/visa-tangerang",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Tangerang"
-      title="Official Tangerang Visa Services"
+      title="Legal Tangerang Visa Services"
       description="The urban hub of Greater Jakarta. We provide specialized Tangerang Visa support for business travelers, exhibition visitors at ICE BSD, and airport region arrivals."
       seoContent={
         <>

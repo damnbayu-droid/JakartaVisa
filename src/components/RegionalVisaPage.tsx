@@ -183,9 +183,9 @@ export default function RegionalVisaPage({
             <div>
               <h3 className="text-lg font-black mb-6 uppercase">Contact Detail</h3>
               <div className="space-y-4">
-                <a href="https://wa.me/61423854701" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
+                <a href="https://wa.me/6285727041992" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                   <MessageCircle className="w-5 h-5 text-amber-500" />
-                  <span>+61 423 854 701</span>
+                  <span>+62 857 2704 1992</span>
                 </a>
                 <a href="mailto:contact@indonesianvisas.agency" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                   <Mail className="w-5 h-5 text-amber-500" />
@@ -201,7 +201,7 @@ export default function RegionalVisaPage({
           
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-slate-500 text-sm font-medium">
-              Jakarta Visas powered by Indonesian Visas ® - All Rights Reserved
+              Jakarta Visas powered by PT Indonesian Visas Agency (TM) - All Rights Reserved
               <div className="mt-2 text-center md:text-left">
                 <a href="/site-map" className="text-amber-500 hover:text-white transition-colors font-bold">(sitemap)</a>
               </div>

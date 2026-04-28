@@ -3,10 +3,10 @@ import { Globe, MapPin, ArrowRight, ShieldCheck, Mail, MessageCircle } from 'luc
 import { socialLinks } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: "Sitemap - Jakarta Visa Official Guide",
-  description: "Comprehensive sitemap for Jakarta Visa. Navigate through our regional visa pages, services, and official immigration guides.",
+  title: "Sitemap - Jakarta Visa Legal Guide",
+  description: "Comprehensive sitemap for Jakarta Visa. Navigate through our regional visa pages, services, and legal immigration guides.",
   alternates: {
-    canonical: "https://jakartavisas.agency/site-map",
+    canonical: "https://www.jakartavisas.agency/site-map",
   },
 };
 
@@ -114,7 +114,7 @@ export default function SitemapPage() {
       <footer className="py-12 px-4 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-slate-500 text-sm font-bold uppercase mb-4">
-            Jakarta Visas powered by Indonesian Visas ® - All Rights Reserved
+            Jakarta Visas powered by PT Indonesian Visas Agency (TM) - All Rights Reserved
           </p>
           <div className="flex justify-center gap-4">
             {socialLinks.map((social, i) => (

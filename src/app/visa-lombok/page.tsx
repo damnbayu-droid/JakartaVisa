@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Lombok Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Planning a trip to Lombok? Get your Lombok Visa quickly with our official E-Visa and Visa on Arrival services. Trusted by thousands for seamless entry into Mataram.",
+  title: "Lombok Visa Services - Legal E-Visa & VOA | Fast Approval",
+  description: "Planning a trip to Lombok? Get your Lombok Visa quickly with our legal E-Visa and Visa on Arrival services. Trusted by thousands for seamless entry into Mataram.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-lombok",
+    canonical: "https://www.jakartavisas.agency/visa-lombok",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Lombok"
-      title="Official Lombok Visa Services"
+      title="Legal Lombok Visa Services"
       description="Experience the pristine beauty of Lombok. We provide specialized Lombok Visa support for tourists, adventure seekers, and business travelers."
       seoContent={
         <>

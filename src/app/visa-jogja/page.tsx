@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Jogja Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Planning a trip to Yogyakarta? Get your Jogja Visa quickly with our official E-Visa and Visa on Arrival services. Trusted for Borobudur and Prambanan entry.",
+  title: "Jogja Visa Services - Legal E-Visa & VOA | Fast Approval",
+  description: "Planning a trip to Yogyakarta? Get your Jogja Visa quickly with our legal E-Visa and Visa on Arrival services. Trusted for Borobudur and Prambanan entry.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-jogja",
+    canonical: "https://www.jakartavisas.agency/visa-jogja",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Jogja"
-      title="Official Jogja Visa Services"
+      title="Legal Jogja Visa Services"
       description="The cultural heart of Indonesia. We provide specialized Jogja Visa support for tourists, students, and culture enthusiasts visiting Yogyakarta."
       seoContent={
         <>

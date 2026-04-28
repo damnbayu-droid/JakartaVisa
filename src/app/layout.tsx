@@ -1,17 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
-  title: "Visa On Arrival Jakarta - Official E-Visa Services | Fast & Reliable",
-  description: "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas. Trusted by thousands for seamless entry into Indonesia. Apply now at voajakarta.com.",
+  title: "JAKARTA Visas Agency - Legal Sponsor for Visas Agency",
+  description: "JAKARTA Visas Agency - Legal sponsor for Tourist, Business, and E-Visas. Fast & reliable services for seamless entry into Indonesia.",
   keywords: [
     "Visa On Arrival Jakarta",
     "Visa Jakarta",
@@ -30,9 +23,9 @@ export const metadata: Metadata = {
     "Tourist Visa Indonesia"
   ],
   authors: [{ name: "Jakarta Visas powered by Indonesian Visas" }],
-  metadataBase: new URL("https://jakartavisas.agency"),
+  metadataBase: new URL("https://www.jakartavisas.agency"),
   alternates: {
-    canonical: "https://jakartavisas.agency",
+    canonical: "https://www.jakartavisas.agency",
   },
   icons: {
     icon: "/Logo Vector.webp",
@@ -40,8 +33,6 @@ export const metadata: Metadata = {
     apple: "/Logo Vector.webp",
   },
   manifest: "/manifest.json",
-  themeColor: "#1e293b",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -53,16 +44,16 @@ export const metadata: Metadata = {
     email: true,
   },
   openGraph: {
-    title: "Visa On Arrival Jakarta - Official E-Visa Services | Fast & Reliable",
-    description: "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas. Trusted by thousands for seamless entry into Indonesia.",
-    url: "https://jakartavisas.agency",
-    siteName: "VOA Jakarta",
+    title: "JAKARTA Visas Agency - Legal Sponsor for Visas Agency",
+    description: "JAKARTA Visas Agency - Legal sponsor for Tourist, Business, and E-Visas. Fast & reliable services for seamless entry into Indonesia.",
+    url: "https://www.jakartavisas.agency",
+    siteName: "Jakarta Visas",
     images: [
       {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Jakarta Visa Official Services",
+        alt: "Jakarta Visa Legal Services",
       },
     ],
     type: "website",
@@ -70,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Visa On Arrival Jakarta - Official E-Visa Services",
+    title: "JAKARTA Visas Agency - Legal Sponsor for Visas Agency",
     description: "Fast, reliable, and professional visa services for your Jakarta adventure. Apply now!",
     images: ["/og-image.webp"],
     site: "@IndonesianVisas",
@@ -98,6 +89,13 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#1e293b",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -106,7 +104,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       <body
-        className={`${inter.variable} antialiased h-full w-full bg-slate-50`}
+        className="antialiased h-full w-full bg-slate-50 font-sans"
       >
         <script
           type="application/ld+json"
@@ -114,9 +112,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Visa On Arrival Jakarta",
-              "url": "https://jakartavisas.agency",
-              "telephone": "+61 423 854 701",
+              "name": "JAKARTA Visas Agency",
+              "url": "https://www.jakartavisas.agency",
+              "telephone": "+62 85727041992",
               "email": "contact@indonesianvisas.agency",
               "address": {
                 "@type": "PostalAddress",
@@ -132,7 +130,14 @@ export default function RootLayout({
                 "longitude": "106.8456"
               },
               "priceRange": "$$",
-              "description": "Official Visa On Arrival Jakarta services. Fast & reliable processing for Tourist, Business, and E-Visas.",
+              "description": "JAKARTA Visas Agency - Division of PT Indonesian Visas Agency providing legal sponsorship and visa services.",
+              "parentOrganization": {
+                "@type": "Corporation",
+                "@id": "https://indonesianvisas.com/#organization",
+                "name": "PT Indonesian Visas Agency",
+                "legalName": "PT Indonesian Visas Agency",
+                "url": "https://indonesianvisas.com"
+              },
               "sameAs": [
                 "https://instagram.com/balihelp.id",
                 "https://facebook.com/BaliHelp",

@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Indonesia Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Get your Indonesia Visa quickly. Official E-Visa and Visa on Arrival services for all 97 eligible countries. Secure, reliable, and professional support 24/7.",
+  title: "Indonesia Visa Services - Legal Sponsorship & VOA | Fast Approval",
+  description: "Get your Indonesia Visa quickly. Legal sponsorship for E-Visa and Visa on Arrival services for all 97 eligible countries. Secure, reliable, and professional support 24/7.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-indonesia",
+    canonical: "https://www.jakartavisas.agency/visa-indonesia",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Indonesia"
-      title="Official Indonesia Visa Services"
+      title="Indonesia Visa - Legal Sponsorship Services"
       description="Your trusted gateway to Indonesia. We provide streamlined E-Visa and Visa on Arrival processing for tourists, business travelers, and digital nomads."
       seoContent={
         <>

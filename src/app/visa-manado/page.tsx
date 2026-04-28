@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Manado Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Visiting Manado for diving or business? Get your Manado Visa quickly with our official E-Visa and Visa on Arrival services. Trusted for Bunaken entry.",
+  title: "Manado Visa Services - Legal E-Visa & VOA | Fast Approval",
+  description: "Visiting Manado for diving or business? Get your Manado Visa quickly with our legal E-Visa and Visa on Arrival services. Trusted for Bunaken entry.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-manado",
+    canonical: "https://www.jakartavisas.agency/visa-manado",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Manado"
-      title="Official Manado Visa Services"
+      title="Legal Manado Visa Services"
       description="The gateway to North Sulawesi. We provide specialized Manado Visa support for divers, nature lovers, and business travelers visiting Sam Ratulangi."
       seoContent={
         <>

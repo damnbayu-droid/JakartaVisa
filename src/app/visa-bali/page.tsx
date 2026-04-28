@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Bali Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Planning a trip to Bali? Get your Bali Visa quickly with our official E-Visa and Visa on Arrival services. Trusted by thousands for seamless entry into Denpasar.",
+  title: "Bali Visa Services - Legal Sponsorship & VOA | Fast Approval",
+  description: "Planning a trip to Bali? Get your Bali Visa quickly with our legal sponsorship for E-Visa and Visa on Arrival services. Trusted by thousands for seamless entry into Denpasar.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-bali",
+    canonical: "https://www.jakartavisas.agency/visa-bali",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Bali"
-      title="Official Bali Visa Services"
+      title="Bali Visa - Legal Sponsorship Services"
       description="Enjoy your island paradise without the visa hassle. We provide specialized Bali Visa support for tourists, digital nomads, and business visitors."
       seoContent={
         <>

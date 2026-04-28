@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Banten Visa Services - Official E-Visa & VOA | Fast Approval",
-  description: "Entering through Banten? Get your Banten Visa quickly with our official E-Visa and Visa on Arrival services. Trusted for industrial and airport region entry.",
+  title: "Banten Visa Services - Legal Sponsorship & VOA | Fast Approval",
+  description: "Entering through Banten? Get your Banten Visa quickly with our legal sponsorship for E-Visa and Visa on Arrival services. Trusted for industrial and airport region entry.",
   alternates: {
-    canonical: "https://jakartavisas.agency/visa-banten",
+    canonical: "https://www.jakartavisas.agency/visa-banten",
   },
 };
 
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Banten"
-      title="Official Banten Visa Services"
+      title="Banten Visa - Legal Sponsorship Services"
       description="The gateway to Jakarta. We provide specialized Banten Visa support for industrial travelers, factory visits, and transit passengers including Soekarno-Hatta area."
       seoContent={
         <>
