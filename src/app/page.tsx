@@ -358,8 +358,8 @@ export default function Home() {
                 Registered Company
               </Badge>
             </button>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight text-slate-800 uppercase">
-              Jakarta Visas <span className="block text-purple-900">Business & Investor <br /> Immigration Hub</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-[1.1] text-slate-800 uppercase">
+              Jakarta Visas <span className="block text-purple-900">Business & Investor <br className="hidden md:block" /> Immigration Hub</span>
             </h1>
             <p className="text-sm md:text-base lg:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed font-bold uppercase tracking-widest">
               Official Jakarta Division of PT Indonesian Visas Agency™
