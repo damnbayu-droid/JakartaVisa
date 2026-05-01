@@ -235,7 +235,7 @@ export default function Home() {
             Jakarta Visas Agency
           </a>
           <a
-            href="https://wa.me/61423854701"
+            href="https://wa.me/6285727041992"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-slate-800 text-white px-4 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base hover:bg-amber-400 hover:text-slate-800 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg inline-flex items-center gap-2"
@@ -359,7 +359,7 @@ export default function Home() {
               </Badge>
             </button>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-[1.1] text-slate-800 uppercase">
-              Jakarta Visas <span className="block text-purple-900">Business & Investor <br className="hidden md:block" /> Immigration Hub</span>
+              Jakarta Visas
             </h1>
             <p className="text-sm md:text-base lg:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed font-bold uppercase tracking-widest">
               Official Jakarta Division of PT Indonesian Visas Agency™
@@ -372,9 +372,9 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-3 md:gap-8 mb-10 md:mb-12 max-w-3xl mx-auto">
               {[
                 { 
-                  label: "Years Experience", 
-                  value: "16+", 
-                  title: "16+ Years of Excellence",
+                  label: "Leading Industry", 
+                  value: "01", 
+                  title: "Leading Industry",
                   info: "since 2010, Jakarta Visas Agency has over 16 years of experience navigating the complexities of Indonesian immigration law. Our longevity in the market is a testament to our reliability and deep-rooted connections." 
                 },
                 { 
@@ -415,123 +415,133 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16">
               <a
                 href="https://indonesianvisas.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-slate-800 text-white px-6 md:px-12 py-4 md:py-6 rounded-full font-bold text-base md:text-xl hover:bg-amber-400 hover:text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg inline-flex items-center gap-2 group"
+                className="bg-slate-800 text-white px-8 py-4 rounded-full font-black text-lg hover:bg-amber-400 hover:text-slate-800 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl hover:-translate-y-1"
               >
-                <Globe className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-                <span>Select Your Country</span>
+                <Globe className="w-5 h-5" />
+                Select Your Country
               </a>
 
-              <Dialog open={isLegalityOpen} onOpenChange={setIsLegalityOpen}>
-                <DialogContent className="sm:max-w-[480px] p-0 overflow-hidden border-none shadow-2xl bg-white rounded-[2.5rem]">
-                  {/* Header */}
-                  <div className="px-8 pt-8 pb-6 border-b border-slate-50 flex items-start justify-between">
-                    <div className="flex items-center gap-4">
-                      <div className="bg-amber-400 p-3 rounded-2xl shadow-sm">
-                        <ShieldCheck className="w-7 h-7 text-slate-900" />
-                      </div>
-                      <div>
-                        <DialogTitle className="text-2xl font-black text-slate-800 leading-tight">
-                          Check Legality
-                        </DialogTitle>
-                        <p className="text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase mt-0.5">
-                          Official Verification
-                        </p>
-                      </div>
+              <a
+                href="https://indonesianvisas.com/arrival-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-500 backdrop-blur-sm text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-white hover:text-slate-800 transition-all duration-300 hover:shadow-md inline-flex items-center gap-2 group border border-slate-200/50"
+              >
+                <FileText className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span>Arrival Card</span>
+              </a>
+            </div>
+
+            <Dialog open={isLegalityOpen} onOpenChange={setIsLegalityOpen}>
+              <DialogContent className="sm:max-w-[480px] p-0 overflow-hidden border-none shadow-2xl bg-white rounded-[2.5rem]">
+                {/* Header */}
+                <div className="px-8 pt-8 pb-6 border-b border-slate-50 flex items-start justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-amber-400 p-3 rounded-2xl shadow-sm">
+                      <ShieldCheck className="w-7 h-7 text-slate-900" />
                     </div>
-                  </div>
-
-                  <div className="p-8 space-y-6 max-h-[80vh] overflow-y-auto">
-                    {/* Company Name Section */}
-                    <div className="bg-slate-50/80 p-6 rounded-[2rem] space-y-4">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase">Company Name</span>
-                        <Button 
-                          variant="secondary" 
-                          size="sm" 
-                          onClick={() => handleCopy('Indonesian Visas Agency', 'Company Name')}
-                          className="h-7 px-3 text-[10px] font-black uppercase tracking-wider rounded-lg bg-white border border-slate-100 hover:bg-slate-800 hover:text-white transition-all shadow-sm"
-                        >
-                          Copy
-                        </Button>
-                      </div>
-                      <h4 className="text-xl font-black text-slate-800">Indonesian Visas Agency</h4>
-                      <Button 
-                        onClick={() => handleCheckLegality('AHU', 'https://www.ahu.go.id/pencarian/profil-pt')}
-                        className="w-full bg-slate-900 hover:bg-slate-800 text-white py-6 rounded-2xl flex items-center justify-between px-6 transition-all active:scale-[0.98]"
-                      >
-                        <span className="font-bold">Cek Profil PT (AHU)</span>
-                        <ArrowRight className="w-5 h-5" />
-                      </Button>
-                    </div>
-
-                    {/* NIB Section */}
-                    <div className="bg-slate-50/80 p-6 rounded-[2rem] space-y-4">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase">Registration No (NIB)</span>
-                        <Button 
-                          variant="secondary" 
-                          size="sm" 
-                          onClick={() => handleCopy('0402260034806', 'NIB Number')}
-                          className="h-7 px-3 text-[10px] font-black uppercase tracking-wider rounded-lg bg-white border border-slate-100 hover:bg-slate-800 hover:text-white transition-all shadow-sm"
-                        >
-                          Copy
-                        </Button>
-                      </div>
-                      <h4 className="text-xl font-black text-slate-800">0402260034806</h4>
-                      <Button 
-                        onClick={() => handleCheckLegality('NIB', 'https://www.badanperizinan.co.id/nib.html')}
-                        className="w-full bg-slate-900 hover:bg-slate-800 text-white py-6 rounded-2xl flex items-center justify-between px-6 transition-all active:scale-[0.98]"
-                      >
-                        <span className="font-bold">Cek NIB (Government)</span>
-                        <ArrowRight className="w-5 h-5" />
-                      </Button>
-                    </div>
-
-                    {/* Other Buttons */}
-                    <div className="space-y-3">
-                      <Button 
-                        variant="outline"
-                        asChild
-                        className="w-full h-auto py-5 rounded-2xl border-2 border-slate-100 hover:border-slate-800 hover:bg-white flex items-center justify-between px-6 transition-all group"
-                      >
-                        <a href="https://companieshouse.id/indonesian-visas-agency?ref=search" target="_blank" rel="noopener noreferrer">
-                          <span className="font-bold text-slate-800">Public Record Company House</span>
-                          <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-slate-800 group-hover:translate-x-1 transition-all" />
-                        </a>
-                      </Button>
-
-                      <Button 
-                        variant="outline"
-                        asChild
-                        className="w-full h-auto py-5 rounded-2xl border-2 border-slate-100 hover:border-slate-800 hover:bg-white flex items-center justify-between px-6 transition-all group"
-                      >
-                        <a href="https://indonesianvisas.com/company-profile" target="_blank" rel="noopener noreferrer">
-                          <span className="font-bold text-slate-800">Check Company Profile</span>
-                          <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-slate-800 group-hover:translate-x-1 transition-all" />
-                        </a>
-                      </Button>
-                    </div>
-
-                    {/* Explanation Footer */}
-                    <div className="bg-amber-50/50 p-5 rounded-2xl flex gap-4 border border-amber-100">
-                      <div className="shrink-0">
-                        <div className="bg-white p-2 rounded-xl shadow-sm">
-                          <Globe className="w-5 h-5 text-amber-500" />
-                        </div>
-                      </div>
-                      <p className="text-[11px] font-medium leading-relaxed text-amber-900/80">
-                        Click <span className="font-black text-amber-900">COPY</span> then open the portal. Search for our credentials to verify our 100% legal compliance with the Indonesian Ministry of Law & Human Rights.
+                    <div>
+                      <DialogTitle className="text-2xl font-black text-slate-800 leading-tight">
+                        Check Legality
+                      </DialogTitle>
+                      <p className="text-[10px] font-black tracking-[0.2em] text-slate-400 uppercase mt-0.5">
+                        Official Verification
                       </p>
                     </div>
                   </div>
-                </DialogContent>
-              </Dialog>
-            </div>
+                </div>
+
+                <div className="p-8 space-y-6 max-h-[80vh] overflow-y-auto">
+                  {/* Company Name Section */}
+                  <div className="bg-slate-50/80 p-6 rounded-[2rem] space-y-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase">Company Name</span>
+                      <Button 
+                        variant="secondary" 
+                        size="sm" 
+                        onClick={() => handleCopy('Indonesian Visas Agency', 'Company Name')}
+                        className="h-7 px-3 text-[10px] font-black uppercase tracking-wider rounded-lg bg-white border border-slate-100 hover:bg-slate-800 hover:text-white transition-all shadow-sm"
+                      >
+                        Copy
+                      </Button>
+                    </div>
+                    <h4 className="text-xl font-black text-slate-800">Indonesian Visas Agency</h4>
+                    <Button 
+                      onClick={() => handleCheckLegality('AHU', 'https://www.ahu.go.id/pencarian/profil-pt')}
+                      className="w-full bg-slate-900 hover:bg-slate-800 text-white py-6 rounded-2xl flex items-center justify-between px-6 transition-all active:scale-[0.98]"
+                    >
+                      <span className="font-bold">Cek Profil PT (AHU)</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </div>
+
+                  {/* NIB Section */}
+                  <div className="bg-slate-50/80 p-6 rounded-[2rem] space-y-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-black tracking-widest text-slate-400 uppercase">Registration No (NIB)</span>
+                      <Button 
+                        variant="secondary" 
+                        size="sm" 
+                        onClick={() => handleCopy('0402260034806', 'NIB Number')}
+                        className="h-7 px-3 text-[10px] font-black uppercase tracking-wider rounded-lg bg-white border border-slate-100 hover:bg-slate-800 hover:text-white transition-all shadow-sm"
+                      >
+                        Copy
+                      </Button>
+                    </div>
+                    <h4 className="text-xl font-black text-slate-800">0402260034806</h4>
+                    <Button 
+                      onClick={() => handleCheckLegality('NIB', 'https://www.badanperizinan.co.id/nib.html')}
+                      className="w-full bg-slate-900 hover:bg-slate-800 text-white py-6 rounded-2xl flex items-center justify-between px-6 transition-all active:scale-[0.98]"
+                    >
+                      <span className="font-bold">Cek NIB (Government)</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </div>
+
+                  {/* Other Buttons */}
+                  <div className="space-y-3">
+                    <Button 
+                      variant="outline"
+                      asChild
+                      className="w-full h-auto py-5 rounded-2xl border-2 border-slate-100 hover:border-slate-800 hover:bg-white flex items-center justify-between px-6 transition-all group"
+                    >
+                      <a href="https://companieshouse.id/indonesian-visas-agency?ref=search" target="_blank" rel="noopener noreferrer">
+                        <span className="font-bold text-slate-800">Public Record Company House</span>
+                        <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-slate-800 group-hover:translate-x-1 transition-all" />
+                      </a>
+                    </Button>
+
+                    <Button 
+                      variant="outline"
+                      asChild
+                      className="w-full h-auto py-5 rounded-2xl border-2 border-slate-100 hover:border-slate-800 hover:bg-white flex items-center justify-between px-6 transition-all group"
+                    >
+                      <a href="https://indonesianvisas.com/company-profile" target="_blank" rel="noopener noreferrer">
+                        <span className="font-bold text-slate-800">Check Company Profile</span>
+                        <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-slate-800 group-hover:translate-x-1 transition-all" />
+                      </a>
+                    </Button>
+                  </div>
+
+                  {/* Explanation Footer */}
+                  <div className="bg-amber-50/50 p-5 rounded-2xl flex gap-4 border border-amber-100">
+                    <div className="shrink-0">
+                      <div className="bg-white p-2 rounded-xl shadow-sm">
+                        <Globe className="w-5 h-5 text-amber-500" />
+                      </div>
+                    </div>
+                    <p className="text-[11px] font-medium leading-relaxed text-amber-900/80">
+                      Click <span className="font-black text-amber-900">COPY</span> then open the portal. Search for our credentials to verify our 100% legal compliance with the Indonesian Ministry of Law & Human Rights.
+                    </p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Process Steps */}

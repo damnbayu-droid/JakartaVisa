@@ -14,7 +14,8 @@ import {
   MapPin,
   Mail,
   Zap,
-  CheckCircle
+  CheckCircle,
+  FileText
 } from 'lucide-react';
 import Image from 'next/image';
 import { visaServices, socialLinks } from '@/lib/constants';
@@ -120,7 +121,7 @@ export default function RegionalVisaPage({
             Jakarta Visas
           </a>
           <a
-            href="https://wa.me/61423854701"
+            href="https://wa.me/6285727041992"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-slate-800 text-white px-4 md:px-6 py-2 md:py-3 rounded-full font-bold text-sm hover:bg-amber-400 hover:text-slate-800 transition-all duration-300 flex items-center gap-2"
@@ -164,6 +165,15 @@ export default function RegionalVisaPage({
             >
               <CheckCircle className="w-5 h-5" />
               Apply {location} Visa
+            </a>
+            <a
+              href="https://indonesianvisas.com/arrival-card"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-500 backdrop-blur-sm text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-white hover:text-slate-800 transition-all duration-300 hover:shadow-md flex items-center justify-center gap-2 border border-slate-200/50"
+            >
+              <FileText className="w-4 h-4" />
+              Arrival Card
             </a>
             <a
               href="https://indonesianvisas.com"
