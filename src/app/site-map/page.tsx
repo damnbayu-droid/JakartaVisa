@@ -31,7 +31,16 @@ const clusters = [
       { name: "Manado Visa", path: "/visa-manado" },
       { name: "Banten Visa", path: "/visa-banten" },
       { name: "Tangerang Visa", path: "/visa-tangerang" },
-      { name: "Indonesia Online", path: "/indonesia-visa" },
+    ]
+  },
+  {
+    name: "Keyword Dominance Silos",
+    links: [
+      { name: "Indonesian Visa Hub", path: "/indonesian-visa" },
+      { name: "Indonesia Visa Portal", path: "/indonesia-visa" },
+      { name: "Official Jakarta Visa", path: "/jakarta-visa" },
+      { name: "Jakarta Visas Catalog", path: "/jakarta-visas" },
+      { name: "Legal Compliance Guide", path: "/visa-jakarta-indonesia" },
     ]
   },
   {
