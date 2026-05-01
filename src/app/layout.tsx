@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+  title: "Jakarta Visas Agency — Official Division of PT Indonesian Visas Agency™",
   description: "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Business Visas, Investor KITAS, and Corporate Immigration. Zero intermediaries.",
   keywords: [
     "Jakarta Visa",
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     "Investor KITAS Jakarta",
     "Business Visa Jakarta",
     "PT Indonesian Visas Agency",
-    "Jakarta Visa Agency",
+    "Jakarta Visas Agency",
     "E28A Visa Jakarta",
     "D2 Visa Jakarta",
     "D12 Visa Jakarta",
-    "Official Jakarta Visa",
+    "Official Jakarta Visas",
   ],
   authors: [{ name: "Jakarta Visas powered by Indonesian Visas" }],
   metadataBase: new URL("https://www.jakartavisas.agency"),
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Jakarta Visa",
+    title: "Jakarta Visas",
   },
   formatDetection: {
     telephone: true,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     email: true,
   },
   openGraph: {
-    title: "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+    title: "Jakarta Visas Agency — Official Division of PT Indonesian Visas Agency™",
     description: "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Business Visas, Investor KITAS, and Corporate Immigration.",
     url: "https://www.jakartavisas.agency",
     siteName: "Jakarta Visas",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Jakarta Visa Legal Services",
+        alt: "Jakarta Visas Legal Services",
       },
     ],
     type: "website",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+    title: "Jakarta Visas Agency — Official Division of PT Indonesian Visas Agency™",
     description: "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Business Visas, Investor KITAS, and Corporate Immigration.",
     images: ["/og-image.webp"],
     site: "@IndonesianVisas",
@@ -110,7 +110,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "@id": "https://www.jakartavisas.agency/#organization",
-              "name": "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+              "name": "Jakarta Visas Agency — Official Division of PT Indonesian Visas Agency™",
               "url": "https://www.jakartavisas.agency",
               "description": "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Indonesian visas — zero intermediaries. Specializing in Corporate Visas, Investor KITAS, and PT PMA Formation.",
               "telephone": "+62-857-2704-1992",

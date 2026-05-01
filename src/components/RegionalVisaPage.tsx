@@ -76,7 +76,7 @@ export default function RegionalVisaPage({
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "Jakarta Visa Agency",
+                "name": "Jakarta Visas Agency",
                 "item": "https://www.jakartavisas.agency"
               },
               {
@@ -117,7 +117,7 @@ export default function RegionalVisaPage({
       <nav className={`fixed top-0 left-0 right-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'bg-white/98 shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a href="/" className="text-2xl md:text-3xl font-black tracking-tight text-slate-800 hover:text-slate-700 transition-colors uppercase">
-            Jakarta Visa
+            Jakarta Visas
           </a>
           <a
             href="https://wa.me/61423854701"
@@ -240,7 +240,7 @@ export default function RegionalVisaPage({
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
-              <h2 className="text-3xl font-black mb-6 uppercase tracking-tighter">Jakarta Visa</h2>
+              <h2 className="text-3xl font-black mb-6 uppercase tracking-tighter">Jakarta Visas</h2>
               <p className="text-slate-400 max-w-md mb-8">
                 Your premier gateway to Indonesian visa services since 2010. We provide fast, reliable, and professional immigration support for Jakarta and beyond.
               </p>

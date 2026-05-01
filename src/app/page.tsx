@@ -232,7 +232,7 @@ export default function Home() {
         }`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a href="https://www.jakartavisas.agency" className="text-xl md:text-3xl font-black tracking-tight text-slate-800 hover:text-slate-700 transition-colors uppercase">
-            Jakarta Visa Agency
+            Jakarta Visas Agency
           </a>
           <a
             href="https://wa.me/61423854701"
@@ -299,7 +299,7 @@ export default function Home() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "How long does it take to get a Jakarta Visa?",
+                  "name": "How long does it take to get a Jakarta Visas?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Apply through JakartaVisas.Agency for a D2 Business Multiple Entry Visa. We are a direct legal sponsor with corporate expertise in the Jakarta capital district."
@@ -326,7 +326,7 @@ export default function Home() {
                   "name": "Is Jakarta Visas Agency a legal service?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, Jakarta Visa Agency is an official division of PT Indonesian Visas Agency™, a 100% legally registered company in Indonesia with NIB 0402260034806 and AHU registration from the Ministry of Law and Human Rights."
+                    "text": "Yes, Jakarta Visas Agency is an official division of PT Indonesian Visas Agency™, a 100% legally registered company in Indonesia with NIB 0402260034806 and AHU registration from the Ministry of Law and Human Rights."
                   }
                 }
               ]
@@ -359,7 +359,7 @@ export default function Home() {
               </Badge>
             </button>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight text-slate-800 uppercase">
-              Jakarta Visa <span className="block text-purple-900">Business & Investor <br /> Immigration Hub</span>
+              Jakarta Visas <span className="block text-purple-900">Business & Investor <br /> Immigration Hub</span>
             </h1>
             <p className="text-sm md:text-base lg:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed font-bold uppercase tracking-widest">
               Official Jakarta Division of PT Indonesian Visas Agency™
@@ -590,7 +590,7 @@ export default function Home() {
               <Send className="w-16 md:w-20 h-16 md:h-20 mx-auto mb-4 md:mb-6 text-slate-800" />
               <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-slate-800">Apply for a Visa</h3>
               <p className="text-base md:text-lg mb-5 md:mb-6 text-slate-600">
-                Get your Jakarta visa quickly and hassle-free. Professional support from start to finish. Start your application today and receive approval within 24-48 hours.
+                Get your Jakarta visas quickly and hassle-free. Professional support from start to finish. Start your application today and receive approval within 24-48 hours.
               </p>
               <a
                 href="https://indonesianvisas.com/apply"
@@ -678,13 +678,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Jakarta Visa SEO Content */}
+      {/* Jakarta Visas SEO Content */}
       <section className="py-16 md:py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-800">Legal Jakarta Visa Information</h2>
+          <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-800">Legal Jakarta Visas Information</h2>
           <div className="prose prose-lg mx-auto text-slate-600 leading-relaxed space-y-6 text-justify md:text-center">
             <p>
-              <strong>Jakarta Visa</strong> services are your gateway to exploring the vibrant capital of Indonesia. Whether you are traveling for business, tourism, or transit, securing the right <strong>Visa on Arrival Jakarta</strong> is crucial for a smooth entry. The <strong>Soekarno-Hatta International Airport (CGK)</strong> serves as the primary entry point for millions of international visitors offering streamlined immigration facilities.
+              <strong>Jakarta Visas</strong> services are your gateway to exploring the vibrant capital of Indonesia. Whether you are traveling for business, tourism, or transit, securing the right <strong>Visa on Arrival Jakarta</strong> is crucial for a smooth entry. The <strong>Soekarno-Hatta International Airport (CGK)</strong> serves as the primary entry point for millions of international visitors offering streamlined immigration facilities.
             </p>
             <p>
               Our agency specializes in <strong>Fast Track Jakarta</strong> services, ensuring you skip the long queues and handle your <strong>E-Visa Indonesia</strong> application with ease. From <strong>B211A Tourist Visas</strong> to long-term <strong>Business Visas</strong>, we provide comprehensive support tailored to your specific travel needs in Jakarta and beyond.

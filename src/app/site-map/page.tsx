@@ -3,8 +3,8 @@ import { Globe, MapPin, ArrowRight, ShieldCheck, Mail, MessageCircle } from 'luc
 import { socialLinks } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: "Sitemap - Jakarta Visa Legal Guide",
-  description: "Comprehensive sitemap for Jakarta Visa. Navigate through our regional visa pages, services, and legal immigration guides.",
+  title: "Sitemap - Jakarta Visas Legal Guide",
+  description: "Comprehensive sitemap for Jakarta Visas. Navigate through our regional visa pages, services, and legal immigration guides.",
   alternates: {
     canonical: "https://www.jakartavisas.agency/site-map",
   },
@@ -24,7 +24,7 @@ const clusters = [
     links: [
       { name: "Indonesia Visa", path: "/visa-indonesia" },
       { name: "Bali Visa", path: "/visa-bali" },
-      { name: "Jakarta Visa", path: "/visa-jakarta" },
+      { name: "Jakarta Visas", path: "/visa-jakarta" },
       { name: "Lombok Visa", path: "/visa-lombok" },
       { name: "Surabaya Visa", path: "/visa-surabaya" },
       { name: "Jogja Visa", path: "/visa-jogja" },
@@ -38,7 +38,7 @@ const clusters = [
     links: [
       { name: "Indonesian Visa Hub", path: "/indonesian-visa" },
       { name: "Indonesia Visa Portal", path: "/indonesia-visa" },
-      { name: "Official Jakarta Visa", path: "/jakarta-visa" },
+      { name: "Official Jakarta Visas", path: "/jakarta-visa" },
       { name: "Jakarta Visas Catalog", path: "/jakarta-visas" },
       { name: "Legal Compliance Guide", path: "/visa-jakarta-indonesia" },
     ]
@@ -62,7 +62,7 @@ export default function SitemapPage() {
       <nav className="bg-white border-b border-slate-200 py-6 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a href="/" className="text-2xl font-black tracking-tighter text-slate-800 uppercase">
-            Jakarta Visa
+            Jakarta Visas
           </a>
           <a href="/" className="text-sm font-bold text-slate-500 hover:text-slate-800 transition-colors uppercase">
             Back to Home
@@ -74,7 +74,7 @@ export default function SitemapPage() {
         <div className="max-w-5xl mx-auto">
           <div className="mb-16">
             <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-4 uppercase">Sitemap</h1>
-            <p className="text-lg text-slate-600">Explore all pages and services provided by Jakarta Visa.</p>
+            <p className="text-lg text-slate-600">Explore all pages and services provided by Jakarta Visas.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
