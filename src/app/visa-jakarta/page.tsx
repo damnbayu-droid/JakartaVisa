@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import RegionalVisaPage from '@/components/RegionalVisaPage';
 
 export const metadata: Metadata = {
-  title: "Jakarta Visa Services - Legal Sponsorship & VOA | Fast Approval",
-  description: "Need a visa for Jakarta? Get your Jakarta Visa quickly with our legal sponsorship for E-Visa and Visa on Arrival services. Trusted experts for Soekarno-Hatta Airport entry.",
+  title: "Visa Jakarta - Airport Entry & Fast Track Services",
+  description: "Arriving at Soekarno-Hatta? Get your Visa Jakarta processed quickly. We offer legal sponsorship and fast-track immigration support for seamless entry through CGK.",
   alternates: {
     canonical: "https://www.jakartavisas.agency/visa-jakarta",
   },
@@ -13,23 +13,22 @@ export default function Page() {
   return (
     <RegionalVisaPage 
       location="Jakarta"
-      title="Jakarta Visa - Legal Sponsorship Services"
-      description="The economic heart of Indonesia. We provide specialized Jakarta Visa support for business travelers, investors, and tourists entering through CGK."
+      title="Visa Jakarta - Logistics & Airport Entry"
+      description="Expert support for travelers entering Indonesia through Jakarta's main international hub. Professional visa services and legal sponsorship."
       seoContent={
         <>
-          <h2>Navigating Jakarta's Gateway</h2>
+          <h2>Navigating Your Visa Jakarta Entry</h2>
           <p>
-            As the capital and primary business hub of Indonesia, <strong>Jakarta</strong> is the main entry point for international travelers. <strong>Soekarno-Hatta International Airport (CGK)</strong> is where most journeys begin. Securing your <strong>Jakarta Visa</strong> or <strong>Visa on Arrival Jakarta</strong> through a trusted agency ensures you skip the queues and start your trip efficiently.
+            The <strong>Visa Jakarta</strong> process often begins the moment you touch down at <strong>Soekarno-Hatta International Airport (CGK)</strong>. As the busiest port of entry in Indonesia, having a pre-approved E-Visa or a reliable sponsor for your Visa on Arrival extension is critical.
           </p>
           <p>
-            Whether you are here for a quick business meeting or a long-term investment, <strong>Jakarta Visas</strong> offers tailored solutions, including <strong>Business Visas (C2/D2)</strong> and <strong>Investment KITAS (E28A)</strong>.
+            Our agency is strategically positioned to support international travelers with their <strong>Jakarta Visa</strong> needs, providing express logistics and document handling that save you time and stress.
           </p>
-          <h3>Why Process Your Visa in Jakarta?</h3>
+          <h3>Why Process via Jakarta?</h3>
           <ul>
-            <li><strong>Main Hub:</strong> Jakarta is the center of Indonesia's immigration infrastructure.</li>
-            <li><strong>Expert Support:</strong> Local presence near major government offices.</li>
-            <li><strong>Fast Track:</strong> We offer expedited services for urgent business travelers.</li>
-            <li><strong>Business Focus:</strong> Specialized in long-term visa solutions for expatriates.</li>
+            <li><strong>Primary Hub:</strong> Direct access to the central immigration headquarters.</li>
+            <li><strong>Infrastructure:</strong> The best airport facilities for VOA and E-Visa verification.</li>
+            <li><strong>Centralized Support:</strong> We handle all national extensions from our central Jakarta division.</li>
           </ul>
         </>
       }

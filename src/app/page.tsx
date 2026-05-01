@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import {
   Globe,
@@ -230,8 +231,8 @@ export default function Home() {
       <nav className={`fixed top-0 left-0 right-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'bg-white/98 shadow-lg' : 'bg-transparent'
         }`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <a href="https://www.jakartavisas.agency" className="text-2xl md:text-4xl font-black tracking-tight text-slate-800 hover:text-slate-700 transition-colors">
-            JAKARTA VISAS
+          <a href="https://www.jakartavisas.agency" className="text-xl md:text-3xl font-black tracking-tight text-slate-800 hover:text-slate-700 transition-colors uppercase">
+            Jakarta Visa Agency
           </a>
           <a
             href="https://wa.me/61423854701"
@@ -246,7 +247,18 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-purple-300 via-purple-50 to-white relative">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden min-h-[90vh] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/jakarta-visas.webp"
+            alt="Jakarta Visas Background"
+            fill
+            priority
+            className="object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-300/30 via-purple-50/50 to-white" />
+        </div>
         {/* SEO Legality JSON-LD */}
         <script
           type="application/ld+json"
@@ -254,7 +266,15 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "GovernmentPermit",
-              "name": "PT Indonesian Visas Agency Legality",
+              "name": "PT Indonesian Visas Agency™ Legality",
+              "parentOrganization": {
+                "@type": "Corporation",
+                "@id": "https://indonesianvisas.com/#organization",
+                "name": "PT Indonesian Visas Agency™",
+                "legalName": "PT Indonesian Visas Agency™",
+                "taxID": "0100000008117681",
+                "url": "https://indonesianvisas.com"
+              },
               "issuedBy": {
                 "@type": "GovernmentOrganization",
                 "name": "Ministry of Law and Human Rights (AHU) Indonesia"
@@ -269,7 +289,52 @@ export default function Home() {
           }}
         />
 
-        <div className="max-w-7xl mx-auto">
+        {/* FAQ Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How long does it take to get a Jakarta Visa?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Apply through JakartaVisas.Agency for a D2 Business Multiple Entry Visa. We are a direct legal sponsor with corporate expertise in the Jakarta capital district."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the best visa for investors in Jakarta?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The E28A Investor KITAS is the best option for foreign investors in Jakarta. It provides 1-2 year residency and legal business authorization for PT PMA company directors."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What documents are needed for an Indonesian E-Visa?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Generally, you need a passport valid for at least 6 months and a digital photograph. Specific visa types like Business or Investment visas may require additional sponsorship documents which we provide."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is Jakarta Visas Agency a legal service?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Jakarta Visa Agency is an official division of PT Indonesian Visas Agency™, a 100% legally registered company in Indonesia with NIB 0402260034806 and AHU registration from the Ministry of Law and Human Rights."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <button 
               onClick={() => setIsLegalityOpen(true)}
@@ -293,11 +358,11 @@ export default function Home() {
                 Registered Company
               </Badge>
             </button>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight text-slate-800">
-              JAKARTA <span className="block">Visas Agency</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight text-slate-800 uppercase">
+              Jakarta Visa <span className="block text-purple-900">Business & Investor <br /> Immigration Hub</span>
             </h1>
-            <p className="text-sm md:text-base lg:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed">
-              Jakarta Visas Agency Gateway to Indonesian Visas
+            <p className="text-sm md:text-base lg:text-lg text-slate-600 mb-8 md:mb-10 leading-relaxed font-bold uppercase tracking-widest">
+              Official Jakarta Division of PT Indonesian Visas Agency™
             </p>
             <p className="text-base md:text-xl lg:text-2xl mb-8 md:mb-10 leading-relaxed text-slate-700">
               Fast, reliable legal sponsorship and visa services for your Jakarta journey. We serve 97 countries with expert support and dedicated customer service available 24/7.
@@ -310,7 +375,7 @@ export default function Home() {
                   label: "Years Experience", 
                   value: "16+", 
                   title: "16+ Years of Excellence",
-                  info: "Established in 2008, Jakarta Visas Agency has over 16 years of experience navigating the complexities of Indonesian immigration law. Our longevity in the market is a testament to our reliability and deep-rooted connections." 
+                  info: "since 2010, Jakarta Visas Agency has over 16 years of experience navigating the complexities of Indonesian immigration law. Our longevity in the market is a testament to our reliability and deep-rooted connections." 
                 },
                 { 
                   label: "Visas Processed", 
@@ -837,7 +902,7 @@ export default function Home() {
           {/* Bottom Bar */}
           <div className="border-t border-slate-800 pt-8 flex flex-col lg:flex-row items-center justify-between gap-6">
             <p className="text-slate-500 text-sm font-medium text-center lg:text-left whitespace-nowrap">
-              &copy; {new Date().getFullYear()} Jakarta Visas powered by <a href="https://indonesianvisas.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors font-bold">PT Indonesian Visas Agency (TM)</a>. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Jakarta Visas powered by <a href="https://indonesianvisas.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors font-bold">PT Indonesian Visas Agency™</a>. All Rights Reserved.
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-end gap-x-3 gap-y-2 text-xs text-slate-600 font-medium">
               <a href="https://indonesianvisas.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">indonesianvisas.com</a>
@@ -846,7 +911,9 @@ export default function Home() {
               <span className="opacity-50">|</span>
               <a href="https://balivisa.agency" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">balivisa.agency</a>
               <span className="opacity-50">|</span>
-              <a href="https://indodesign.website" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">indodesign.website</a>
+              <a href="https://indonesianvisas.com/privacy-policy" className="hover:text-white transition-colors">Privacy</a>
+              <span className="opacity-50">|</span>
+              <a href="https://indonesianvisas.com/terms-and-conditions" className="hover:text-white transition-colors">Terms</a>
             </div>
           </div>
         </div>

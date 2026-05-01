@@ -114,7 +114,7 @@ export default function SitemapPage() {
       <footer className="py-12 px-4 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-slate-500 text-sm font-bold uppercase mb-4">
-            Jakarta Visas powered by PT Indonesian Visas Agency (TM) - All Rights Reserved
+            Jakarta Visas powered by PT Indonesian Visas Agency™ - All Rights Reserved
           </p>
           <div className="flex justify-center gap-4">
             {socialLinks.map((social, i) => (

@@ -15,6 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/visa-banten',
         '/visa-tangerang',
         '/indonesia-visa',
+        '/jakarta-visa',
+        '/jakarta-visas',
+        '/visa-jakarta-indonesia',
     ];
 
     const sitemapRoutes: MetadataRoute.Sitemap = [

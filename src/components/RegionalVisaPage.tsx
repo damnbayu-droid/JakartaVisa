@@ -16,6 +16,7 @@ import {
   Zap,
   CheckCircle
 } from 'lucide-react';
+import Image from 'next/image';
 import { visaServices, socialLinks } from '@/lib/constants';
 
 interface RegionalVisaPageProps {
@@ -46,8 +47,33 @@ export default function RegionalVisaPage({
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 w-full overflow-x-hidden">
+      {/* Regional JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": `JAKARTA Visas - ${location} Division`,
+            "description": displayDescription,
+            "url": `https://www.jakartavisas.agency/visa-${location.toLowerCase()}`,
+            "telephone": "+62 85727041992",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": location,
+              "addressRegion": location,
+              "addressCountry": "ID"
+            },
+            "parentOrganization": {
+              "@type": "Corporation",
+              "name": "PT Indonesian Visas Agency™",
+              "url": "https://indonesianvisas.com"
+            }
+          })
+        }}
+      />
       {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'bg-white/98 shadow-lg' : 'bg-white'}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'bg-white/98 shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a href="/" className="text-2xl md:text-3xl font-black tracking-tight text-slate-800 hover:text-slate-700 transition-colors uppercase">
             Jakarta Visa
@@ -65,8 +91,19 @@ export default function RegionalVisaPage({
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-purple-100 via-white to-slate-50">
-        <div className="max-w-7xl mx-auto text-center">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden flex items-center min-h-[60vh]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/jakarta-visas.webp"
+            alt="Jakarta Visas Regional Background"
+            fill
+            priority
+            className="object-cover opacity-10"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-100/50 via-white/80 to-slate-50" />
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-xs font-bold mb-6 border border-slate-200 uppercase tracking-widest">
             <Zap className="w-3 h-3 text-amber-500 fill-amber-500" />
             Instant Processing Available
@@ -164,7 +201,7 @@ export default function RegionalVisaPage({
             <div className="col-span-1 md:col-span-2">
               <h2 className="text-3xl font-black mb-6 uppercase tracking-tighter">Jakarta Visa</h2>
               <p className="text-slate-400 max-w-md mb-8">
-                Your premier gateway to Indonesian visa services since 2008. We provide fast, reliable, and professional immigration support for Jakarta and beyond.
+                Your premier gateway to Indonesian visa services since 2010. We provide fast, reliable, and professional immigration support for Jakarta and beyond.
               </p>
               <div className="flex flex-wrap gap-4">
                 {socialLinks.map((social, i) => (
@@ -201,12 +238,19 @@ export default function RegionalVisaPage({
           
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-slate-500 text-sm font-medium">
-              Jakarta Visas powered by PT Indonesian Visas Agency (TM) - All Rights Reserved
+              Jakarta Visas powered by PT Indonesian Visas Agency™ - All Rights Reserved
               <div className="mt-2 text-center md:text-left">
                 <a href="/site-map" className="text-amber-500 hover:text-white transition-colors font-bold">(sitemap)</a>
               </div>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap items-center gap-4 md:gap-6">
+              <div className="flex items-center gap-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-600 border-r border-slate-800 pr-6 mr-2 hidden md:flex">
+                <a href="https://indonesianvisas.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">indonesianvisas.com</a>
+                <span className="opacity-30">|</span>
+                <a href="https://balivisa.agency" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">balivisa.agency</a>
+                <span className="opacity-30">|</span>
+                <a href="https://bali.enterprises" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">bali.enterprises</a>
+              </div>
               <a href="https://indonesianvisas.com/privacy-policy" className="text-slate-500 hover:text-white text-xs uppercase font-bold transition-colors">Privacy</a>
               <a href="https://indonesianvisas.com/terms-and-conditions" className="text-slate-500 hover:text-white text-xs uppercase font-bold transition-colors">Terms</a>
             </div>

@@ -3,24 +3,21 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "JAKARTA Visas Agency - Legal Sponsor for Visas Agency",
-  description: "JAKARTA Visas Agency - Legal sponsor for Tourist, Business, and E-Visas. Fast & reliable services for seamless entry into Indonesia.",
+  title: "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+  description: "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Business Visas, Investor KITAS, and Corporate Immigration. Zero intermediaries.",
   keywords: [
-    "Visa On Arrival Jakarta",
-    "Visa Jakarta",
     "Jakarta Visa",
-    "E-Visa Indonesia",
-    "B211A Visa",
+    "Jakarta Visas",
+    "Visa Jakarta",
+    "Indonesian Visa",
+    "Investor KITAS Jakarta",
     "Business Visa Jakarta",
-    "Extension Jakarta",
-    "jakartavisa.agency",
-    "jakartavisas.agency",
-    "voajakarta.com",
-    "evisajakarta.online",
-    "visaonarrivaljakarta.com",
-    "Indonesia Visa",
-    "Jakarta Visa Extension",
-    "Tourist Visa Indonesia"
+    "PT Indonesian Visas Agency",
+    "Jakarta Visa Agency",
+    "E28A Visa Jakarta",
+    "D2 Visa Jakarta",
+    "D12 Visa Jakarta",
+    "Official Jakarta Visa",
   ],
   authors: [{ name: "Jakarta Visas powered by Indonesian Visas" }],
   metadataBase: new URL("https://www.jakartavisas.agency"),
@@ -44,8 +41,8 @@ export const metadata: Metadata = {
     email: true,
   },
   openGraph: {
-    title: "JAKARTA Visas Agency - Legal Sponsor for Visas Agency",
-    description: "JAKARTA Visas Agency - Legal sponsor for Tourist, Business, and E-Visas. Fast & reliable services for seamless entry into Indonesia.",
+    title: "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+    description: "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Business Visas, Investor KITAS, and Corporate Immigration.",
     url: "https://www.jakartavisas.agency",
     siteName: "Jakarta Visas",
     images: [
@@ -61,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JAKARTA Visas Agency - Legal Sponsor for Visas Agency",
-    description: "Fast, reliable, and professional visa services for your Jakarta adventure. Apply now!",
+    title: "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
+    description: "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Business Visas, Investor KITAS, and Corporate Immigration.",
     images: ["/og-image.webp"],
     site: "@IndonesianVisas",
     creator: "@IndonesianVisas",
@@ -112,41 +109,57 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "JAKARTA Visas Agency",
+              "@id": "https://www.jakartavisas.agency/#organization",
+              "name": "Jakarta Visa Agency — Official Division of PT Indonesian Visas Agency™",
               "url": "https://www.jakartavisas.agency",
-              "telephone": "+62 85727041992",
+              "description": "Official Jakarta division of PT Indonesian Visas Agency™. Direct legal sponsor for Indonesian visas — zero intermediaries. Specializing in Corporate Visas, Investor KITAS, and PT PMA Formation.",
+              "telephone": "+62-857-2704-1992",
               "email": "contact@indonesianvisas.agency",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Jakarta",
-                "addressLocality": "Jakarta",
-                "addressRegion": "Jakarta",
-                "postalCode": "10110",
-                "addressCountry": "ID"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "-6.2088",
-                "longitude": "106.8456"
-              },
-              "priceRange": "$$",
-              "description": "JAKARTA Visas Agency - Division of PT Indonesian Visas Agency providing legal sponsorship and visa services.",
+              "areaServed": ["Jakarta", "South Jakarta", "Central Jakarta", "North Jakarta", "West Jakarta", "East Jakarta", "Tangerang", "Bekasi", "Depok", "IKN"],
               "parentOrganization": {
                 "@type": "Corporation",
                 "@id": "https://indonesianvisas.com/#organization",
-                "name": "PT Indonesian Visas Agency",
-                "legalName": "PT Indonesian Visas Agency",
+                "name": "PT Indonesian Visas Agency™",
+                "legalName": "PT Indonesian Visas Agency™",
+                "taxID": "0100000008117681",
                 "url": "https://indonesianvisas.com"
               },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Tibungsari No.11C, Padangsambian Kaja",
+                "addressLocality": "Denpasar Barat, Denpasar",
+                "addressRegion": "Bali",
+                "postalCode": "80117",
+                "addressCountry": "ID"
+              },
+              "identifier": [
+                { "@type": "PropertyValue", "name": "NIB", "value": "0402260034806" },
+                { "@type": "PropertyValue", "name": "AHU", "value": "AHU-00065.AH.02.01.TAHUN 2020" }
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "200",
+                "bestRating": "5"
+              },
               "sameAs": [
-                "https://instagram.com/balihelp.id",
+                "https://indonesianvisas.com",
+                "https://maps.app.goo.gl/p6t9JSd5CGCDf7jZA",
+                "https://www.instagram.com/balihelp.id",
                 "https://facebook.com/BaliHelp",
-                "https://twitter.com/IndonesianVisas",
-                "https://www.linkedin.com/in/bayu-damopolii-887ab883/",
+                "https://x.com/IndonesianVisas",
+                "https://www.linkedin.com/in/balihelp/",
                 "https://youtube.com/@balihelp",
                 "https://t.me/IndonesianVisas",
                 "https://www.tiktok.com/@balihelp.id"
-              ]
+              ],
+              "founder": {
+                "@type": "Person",
+                "name": "Bayu Damopolii-Manoppo",
+                "jobTitle": "Founder & Strategic Director",
+                "url": "https://www.linkedin.com/in/balihelp/",
+                "sameAs": ["https://www.linkedin.com/in/bayu-damopolii-887ab883/"]
+              }
             })
           }}
         />
