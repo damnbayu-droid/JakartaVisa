@@ -116,6 +116,44 @@ export default function RootLayout({
               "telephone": "+62-857-2704-1992",
               "email": "contact@indonesianvisas.agency",
               "areaServed": ["Jakarta", "South Jakarta", "Central Jakarta", "North Jakarta", "West Jakarta", "East Jakarta", "Tangerang", "Bekasi", "Depok", "IKN"],
+              "logo": "https://www.jakartavisas.agency/Logo Vector.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+62-857-2704-1992",
+                "contactType": "customer service",
+                "areaServed": "ID",
+                "availableLanguage": ["en", "id"]
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Jakarta Immigration & Visa Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Investor KITAS (E28A)",
+                      "description": "2-Year residency for foreign investors in Jakarta."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Multiple Entry Business Visa (D2/D12)",
+                      "description": "Perfect for corporate networking and business meetings."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "PT PMA Formation",
+                      "description": "Full foreign-owned company incorporation in Jakarta."
+                    }
+                  }
+                ]
+              },
               "parentOrganization": {
                 "@type": "Corporation",
                 "@id": "https://indonesianvisas.com/#organization",

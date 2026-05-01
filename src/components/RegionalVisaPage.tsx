@@ -53,6 +53,47 @@ export default function RegionalVisaPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "ItemPage",
+            "name": displayTitle,
+            "description": displayDescription,
+            "mainEntity": {
+              "@type": "Service",
+              "name": location + " Visa Services",
+              "provider": {
+                "@id": "https://www.jakartavisas.agency/#organization"
+              }
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Jakarta Visa Agency",
+                "item": "https://www.jakartavisas.agency"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": location + " Visa",
+                "item": "https://www.jakartavisas.agency" + (typeof window !== 'undefined' ? window.location.pathname : '')
+              }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": `JAKARTA Visas - ${location} Division`,
             "description": displayDescription,
